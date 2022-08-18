@@ -1,0 +1,50 @@
+package lab1.groupno2;
+
+public class Lab1GroupNo2 {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        System.out.println(tableOfSquares(5));
+    }
+//Problem 1
+//ITERATION
+ int sum = 0;
+ Iterator<Integer> iterator = integer.iterator();
+     if ( iterator.hasNext() ) {
+               return sum += iterator.next().intValue();
+     else
+                return 0;
+     }
+//FOR LOOP
+List<Integer> integers = new ArrayList<>();
+int sum = 0;
+      for (int number : integers){
+           sum += number;
+       }
+    
+    
+/*Problem 2: Modify the following Date class so that it implements the
+Comparable interface. The ordering on objects of type Date should be
+the natural, chronological ordering.*/
+ /*   
+    class Date implement Comparable<Date> {
+        // month = 1-12, day 1-31, year
+        int month, day, year;
+        
+        //Constructor
+        Date(int m, int d,  int y){
+            month = m;
+            day = d;
+            year = y;
+        }
+
+        public int compareTo()
+    */
+// Problem #4 Convert the method below to one that uses recursion:
+       public static int tableOfSquares(int n){
+           if(n == 0) return 1;
+           return n + tableOfSquares(n - 1);
+        
+       }
+    
+}
